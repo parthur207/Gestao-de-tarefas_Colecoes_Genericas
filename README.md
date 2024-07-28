@@ -43,7 +43,6 @@ Propriedades na inserção de uma nova tarefa: Titulo da tarefa, descrição da 
    ```bash
    git clone (https://github.com/parthur207/Gestao-de-tarefas.git)
    
-2. Abra o projeto em seu ambiente de desenvolvimento C# preferido e execute-o.
 
 <br>
    
