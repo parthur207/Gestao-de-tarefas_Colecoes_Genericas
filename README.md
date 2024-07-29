@@ -1,71 +1,113 @@
-# ETAPA 2 - Gerenciador de Tarefas
+# Documentação do Projeto: Gestão de Tarefas
+<br>
 
-## Descrição
 
-Este projeto é um Sistema de gestão de Tarefas desenvolvido em C#. O sistema oferece muitas funcionalidades úteis, permitindo adicionar, remover, atualizar, listar e verificar o status de tarefas.
+## Objetivo do Projeto
 
-## Funcionalidades Principais
+O objetivo deste projeto é desenvolver um sistema de gestão de tarefas que permita a criação, remoção, atualização e listagem de tarefas. O sistema é projetado para ser utilizado por indivíduos ou pequenas equipes que precisam organizar suas tarefas e acompanhar o progresso e prazos de suas atividades.
 
-### 1. Adição de tarefas
-
-- Realiza adições de tarefas diretamente a uma lista, sendo necessário o informe de variados atributos que terão importancia para o restante das funcionalidades do sistema.
-Propriedades na inserção de uma nova tarefa: Titulo da tarefa, descrição da tarefa, Data de vencimento e Prioridade da tarefa.
 
 <br>
 
-### 2. Descarte de tarefas
-- O segundo método presente é a remoção de tarefas pelo informe de seu nome, isso fornece ao usuário a tomada de decisão por tarefas irrelevantes, concluídas ou errôneas.
+### Linguagem Utilizada e Fundamentos
+
+A linguagem utilizada para o desenvolvimento deste projeto é C#. C# é uma linguagem de programação moderna, orientada a objetos, e fortemente tipada. É amplamente utilizada para desenvolvimento de aplicações desktop, web, e móveis devido à sua robustez e versatilidade.
+
+
 
 <br>
+### Bibliotecas Utilizadas
 
-### 3. Atualização do status das tarefas
-- Oferece a possibilidade de mudança do status da tarefa após sua conclusão, podendo alterar seu status para "Finalizada", ou manter como "pendente".
+O projeto utiliza as seguintes bibliotecas:
 
-<br>
+System: Biblioteca principal que fornece classes básicas e fundamentais para a aplicação.
+System.Collections.Generic: Fornece classes para definir coleções fortemente tipadas que podem ser armazenadas em memória e acessadas de maneira eficiente.
 
-### 4. Listagem de Tarefas
-
-- O método possui o propósito de listar todas as tarefas inseridas na lista, independente de seu status, sendo essencial para uma visualização precisa das tarefas, seus atributos e seu status atual.
-- Além disso, o mesmo efetua uma listagem de tarefas com datas próximas a vencer, trazendo a exibição de tarefas na véspera da data da máquina do usuário e tarefas com 
 
 <br>
+### Funcionalidades e Métodos
 
-## Tecnologias Utilizadas
-- **Linguagem de Programação**: C#
-- Framework: .NET
-- **Fundamentos**: Programação orientada a objetos, Interface, Herança, estruturação de dados, listas, e lógica de programação.
-- **Bibliotecas Utilizadas**: `System`, `System.Collections.Generic`
- 
+
+- Add
+
+Adiciona uma nova tarefa à lista de tarefas.
+
+Parâmetros:
+
+List<TaskService> Lista_de_Tarefas
+- int id
+
+Lógica:
+
+Solicita ao usuário o título, descrição, data de vencimento e prioridade da tarefa. Cria uma nova instância de `TaskService` e a adiciona à lista de tarefas.
+
+
+
+- Remove
+
+Remove uma tarefa especificada pelo usuário da lista de tarefas.
+
+Parâmetros:
+
+List<TaskService> Lista_de_Tarefas
+
+Lógica:
+
+Solicita ao usuário o nome da tarefa a ser removida e remove a tarefa correspondente da lista.
+
+
+
+- Update
+
+Atualiza o status de uma tarefa especificada pelo usuário.
+
+Parâmetros:
+
+List<TaskService> Lista_de_Tarefas
+
+Lógica:
+
+Solicita ao usuário o nome da tarefa e atualiza seu status para "Finalizada" caso tenha sido concluída.
+
+
+
+- ListTask
+
+Lista todas as tarefas, exibindo suas informações.
+
+Parâmetros:
+
+List<TaskService> Lista_de_Tarefas
+
+Lógica:
+
+Exibe a lista de todas as tarefas, pendentes ou finalizadas, com suas respectivas informações.
+
+
+
+- CheckTask
+
+Verifica e atualiza o status das tarefas com base na data atual.
+
+Parâmetros:
+
+- List<TaskService> Lista_de_Tarefas
+
+Lógica:
+
+Compara a data de vencimento das tarefas com a data atual e atualiza o status para "Expirada" se a tarefa não tiver sido concluída a tempo.
+
+
+
 <br>
+### Estrutura do Código
 
-## Como Executar:
-1. Clone o repositório:
-   ```bash
-   git clone (https://github.com/parthur207/Gestao-de-tarefas.git)
-   
+O código é estruturado em uma interface `ITaskRepository` que define os métodos básicos para gerenciar tarefas, e uma classe `TaskService` que implementa esta interface. A classe `Program` contém o método `Main` que serve como ponto de entrada da aplicação, gerenciando o loop principal de interação com o usuário e chamando os métodos apropriados com base na opção selecionada.
+
 
 <br>
-   
-## Estrutura do Projeto
+### Conclusão
 
-#### Interface.cs: 
-- ITaskRepository:
-Define a estrutura básica para as operações de adicionar, remover, atualizar, listar e verificar tarefas.
-
-#### TaskService.cs:
-- Classe TaskService:
-Implementa a interface ITaskRepository e define a estrutura das tarefas, além de conter os métodos para gerenciar as tarefas.
-
-#### Program.cs:
-- Classe Program/Main:
-Contém o método Main que gerencia a interação com o usuário e executa as operações disponíveis.
-
-<br>
-
-## Contato:
-
-Email: parthur207@gmail.com 
-| Telefone: 31 9 8965-0406 |
-LinkedIn: www.linkedin.com/in/paulo-andrade-836956237
+Esta documentação fornece uma visão geral do projeto de Gestão de Tarefas, detalhando o objetivo, a linguagem e as bibliotecas utilizadas, além de descrever as funcionalidades implementadas. 
 
 
