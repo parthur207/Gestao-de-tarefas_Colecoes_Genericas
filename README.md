@@ -1,71 +1,57 @@
-# ETAPA 2 - Gerenciador de Tarefas
+Parte 1: Questões Teóricas
 
-## Descrição
+1. Explique o que são os princípios SOLID e como cada um deles pode ser aplicado em um projeto desenvolvido em .NET.
 
-Este projeto é um Sistema de gestão de Tarefas desenvolvido em C#. O sistema oferece muitas funcionalidades úteis, permitindo adicionar, remover, atualizar, listar e verificar o status de tarefas.
+2. Quais são os principais padrões de arquitetura de software utilizados em aplicações .NET? Descreva dois desses padrões e seus benefícios.
 
-## Funcionalidades Principais
+3. Por que é importante separar a lógica de negócios da lógica de apresentação em uma aplicação .NET? Como isso pode ser alcançado?
 
-### 1. Adição de tarefas
+4. Como alcançar essa separação:
 
-- Realiza adições de tarefas diretamente a uma lista, sendo necessário o informe de variados atributos que terão importancia para o restante das funcionalidades do sistema.
-Propriedades na inserção de uma nova tarefa: Titulo da tarefa, descrição da tarefa, Data de vencimento e Prioridade da tarefa.
+Respostas:
 
-<br>
+1. O SOLID se trata de uma metodologia utilizada no incremento de desenvolvimento de softwares, possuindo 5 pilares de grande importância, trazendo maior coesão, efetividade, legibilidade e tornando o código flexivel para ocorrer formatações, manutenções, ou novos incrementos.
 
-### 2. Descarte de tarefas
-- O segundo método presente é a remoção de tarefas pelo informe de seu nome, isso fornece ao usuário a tomada de decisão por tarefas irrelevantes, concluídas ou errôneas.
+Primeiro pilar: Single responsibility principle  
 
-<br>
+* Basicamente, este princípio adverte que um conteúdo pode ter somente uma função, ou dever. Isso significa que em uma codificação com a presença de uma classe, devemos atribuir somente uma responsabilidade/funcionalidade a mesma.
+Como ponto positivo, isso reduz o acoplamento entre as classes e facilita muito a manutenção, leitura e implantação de novas metodologias ao código.
 
-### 3. Atualização do status das tarefas
-- Oferece a possibilidade de mudança do status da tarefa após sua conclusão, podendo alterar seu status para "Finalizada", ou manter como "pendente".
 
-<br>
+Segundo pilar: Open/Closed principle
 
-### 4. Listagem de Tarefas
+* Este principio afirma que um software deve permitir a sua extensão, mas restringir sua modificação. Em esclarecimento, esse pilar recomenda a implementação/manutenção de um código sem que isso infrinja diretamente na estrutura do código fonte.
+A partir desse principio, é possível efetuar ações de melhoria, ou inserções de novas funcionalidades em um sistema de forma mais segura, reduzindo bugs.
 
-- O método possui o propósito de listar todas as tarefas inseridas na lista, independente de seu status, sendo essencial para uma visualização precisa das tarefas, seus atributos e seu status atual.
-- Além disso, o mesmo efetua uma listagem de tarefas com datas próximas a vencer, trazendo a exibição de tarefas na véspera da data da máquina do usuário e tarefas com 
 
-<br>
+Terceiro pilar: Liskov Substition principle
 
-## Tecnologias Utilizadas
-- **Linguagem de Programação**: C#
-- Framework: .NET
-- **Fundamentos**: Programação orientada a objetos, Interface, Herança, estruturação de dados, listas, e lógica de programação.
-- **Bibliotecas Utilizadas**: `System`, `System.Collections.Generic`
- 
-<br>
+* O princípio da substituição de Liskov traz a tona que uma subclasse deve ser capaz de substituir sua classe base em qualquer contexto sem que o comportamento padrão do programa seja alterado.
+Com isso, este principio se relaciona com a recomendação de utilizar interfaces, definindo contratos e promovendo a alteração das classes sem alterar seu comportamento padrão.
 
-## Como Executar:
-1. Clone o repositório:
-   ```bash
-   git clone (https://github.com/parthur207/Gestao-de-tarefas.git)
-   
 
-<br>
-   
-## Estrutura do Projeto
+Quarto Pilar: Interface segregation principle
 
-#### Interface.cs: 
-- ITaskRepository:
-Define a estrutura básica para as operações de adicionar, remover, atualizar, listar e verificar tarefas.
+* O princípio estipula que é mais benéfico a implementação de várias interfaces específicas do que apenas uma com código em abundância. 
+Isso evita que as classes implementam métodos desnecessários e traz mais coesão ao programa.
 
-#### TaskService.cs:
-- Classe TaskService:
-Implementa a interface ITaskRepository e define a estrutura das tarefas, além de conter os métodos para gerenciar as tarefas.
 
-#### Program.cs:
-- Classe Program/Main:
-Contém o método Main que gerencia a interação com o usuário e executa as operações disponíveis.
+Quinto pilar: Dependecy inversion principle 
 
-<br>
+* O quinto pular adverte que os módulos de alto nível devem ter dependência somente as abstrações e não a modulos de baixo nível. Tal pilar é constantemente usado, pregando que classes devem depender de interfaces, ou classes abstratas, fazendo a injeção de independência.
 
-## Contato:
 
-Email: parthur207@gmail.com 
-| Telefone: 31 9 8965-0406 |
-LinkedIn: www.linkedin.com/in/paulo-andrade-836956237
+2. Pode-se citar o MVC (Model View Controller), MVVM (Model View ViewModel) e Microservices como os principais padrões de arquitetura utilizados nas aplicações .NET.
+
+* O MVC é um padrão que faz a divisão da aplicação em três partes: a primeira é a 'Model', representando a lógica de dados, a segunda é a 'View' apresentando os dados ao usuário e a última se trata da 'Controller' tendo o intuito de integrar com o 'Model' e a 'View' controlando o fluxo da aplicação. 
+* Microservices é outro padrão arquitetural em que cada um dos componentes de um software é dividido em serviços pequenos, com distribuição e autonomia, executando um processo único. Sua implementação é positiva por trazer escalabilidade, flexibilidade e legibilidade para as manutenções e atualizações.
+
+
+3. É de grande importância separar esses termos para ter um código melhor, no sentido de fornecer melhor legibilidade, reutilização e manutenção de estruturas.
+Isso fornece facilidade de testes, reutilização em outras estruturas do código e manutenção ao ter o propósito de alteração determinada lógica, estrutura ou inserções de novas ações.
+
+
+3.1 - É possível separar tais termos com a utilização dos padrões de arquitetura citados na questão 2: MVC, MVVM, Microservices, etc.
+
 
 
