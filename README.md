@@ -11,14 +11,12 @@
 
 ## Linguagem Utilizada e Fundamentos
 
-A linguagem utilizada para o desenvolvimento deste projeto é C#. C# é uma linguagem de programação moderna, orientada a objetos, e fortemente tipada. É amplamente utilizada para desenvolvimento de aplicações desktop, web, e móveis devido à sua robustez e versatilidade.
-
-
+* A linguagem utilizada para o desenvolvimento deste projeto é C#. C# é uma linguagem de programação moderna, orientada a objetos, e fortemente tipada. É amplamente utilizada para desenvolvimento de aplicações desktop, web, e móveis devido à sua robustez e versatilidade.
 
 <br>
 ## Bibliotecas Utilizadas
 
-O projeto utiliza as seguintes bibliotecas:
+* O projeto utiliza as seguintes bibliotecas:
 
 System: Biblioteca principal que fornece classes básicas e fundamentais para a aplicação.
 System.Collections.Generic: Fornece classes para definir coleções fortemente tipadas que podem ser armazenadas em memória e acessadas de maneira eficiente.
@@ -102,12 +100,12 @@ Compara a data de vencimento das tarefas com a data atual e atualiza o status pa
 <br>
 ## Estrutura do Código
 
-O código é estruturado em uma interface `ITaskRepository` que define os métodos básicos para gerenciar tarefas, e uma classe `TaskService` que implementa esta interface. A classe `Program` contém o método `Main` que serve como ponto de entrada da aplicação, gerenciando o loop principal de interação com o usuário e chamando os métodos apropriados com base na opção selecionada.
+* O código é estruturado em uma interface `ITaskRepository` que define os métodos básicos para gerenciar tarefas, e uma classe `TaskService` que implementa esta interface. A classe `Program` contém o método `Main` que serve como ponto de entrada da aplicação, gerenciando o loop principal de interação com o usuário e chamando os métodos apropriados com base na opção selecionada.
 
 
 <br>
 ## Conclusão
 
-Esta documentação fornece uma visão geral do projeto de Gestão de Tarefas, detalhando o objetivo, a linguagem e as bibliotecas utilizadas, além de descrever as funcionalidades implementadas. 
+* Esta documentação fornece uma visão geral do projeto de Gestão de Tarefas, detalhando o objetivo, a linguagem e as bibliotecas utilizadas, além de descrever as funcionalidades implementadas. 
 
 
