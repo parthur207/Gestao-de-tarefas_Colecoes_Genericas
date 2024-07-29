@@ -101,7 +101,8 @@ Compara a data de vencimento das tarefas com a data atual e atualiza o status pa
 
 ## Estrutura do Código
 
-* O código é estruturado em uma interface `ITaskRepository` que define os métodos básicos para gerenciar tarefas, e uma classe `TaskService` que implementa esta interface. A classe `Program` contém o método `Main` que serve como ponto de entrada da aplicação, gerenciando o loop principal de interação com o usuário e chamando os métodos apropriados com base na opção selecionada.
+* O código é estruturado em uma interface `ITaskRepository` que define os métodos básicos para gerenciar tarefas, a class `Task` que possui a declaração de todos os atributos com modificadores de acesso protect e uma classe `TaskService` que implementa esta interface. A classe `Program` contém o método `Main` que serve como ponto de entrada da aplicação, gerenciando o loop principal de interação com o usuário e chamando os métodos apropriados com base na opção selecionada.
+
 
 
 <br>
