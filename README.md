@@ -53,7 +53,7 @@ Quinto pilar: Dependecy inversion principle
 Isso fornece facilidade de testes, reutilização em outras estruturas do código e manutenção ao ter o propósito de alteração determinada lógica, estrutura ou inserções de novas ações.
 
 
-3.1 - É possível separar tais termos com a utilização dos padrões de arquitetura citados na questão 2: MVC, MVVM, Microservices, etc.
+4 - É possível separar tais termos com a utilização dos padrões de arquitetura citados na questão 2: MVC, MVVM, Microservices, etc.
 
 
 
