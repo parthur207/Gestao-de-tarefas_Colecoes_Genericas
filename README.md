@@ -41,7 +41,7 @@ Lógica:
 
 Solicita ao usuário o título, descrição, data de vencimento e prioridade da tarefa. Cria uma nova instância de `TaskService` e a adiciona à lista de tarefas.
 
-
+<br>
 
 - Remove
 
@@ -55,7 +55,7 @@ Lógica:
 
 Solicita ao usuário o nome da tarefa a ser removida e remove a tarefa correspondente da lista.
 
-
+<br>
 
 - Update
 
@@ -69,7 +69,7 @@ Lógica:
 
 Solicita ao usuário o nome da tarefa e atualiza seu status para "Finalizada" caso tenha sido concluída.
 
-
+<br>
 
 - ListTask
 
@@ -83,7 +83,7 @@ Lógica:
 
 Exibe a lista de todas as tarefas, pendentes ou finalizadas, com suas respectivas informações.
 
-
+<br>
 
 - CheckTask
 
@@ -96,8 +96,6 @@ List<TaskService> Lista_de_Tarefas
 Lógica:
 
 Compara a data de vencimento das tarefas com a data atual e atualiza o status para "Expirada" se a tarefa não tiver sido concluída a tempo.
-
-
 
 <br>
 
