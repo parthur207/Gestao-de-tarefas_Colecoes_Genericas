@@ -1,4 +1,5 @@
 <h1 align="center"> Documentação do Projeto: Gestão de Tarefas </h1>
+
 <br>
 
 
@@ -26,7 +27,6 @@ System.Collections.Generic: Fornece classes para definir coleções fortemente t
 <br>
 
 ## Funcionalidades e Métodos
-
 
 - Add
 
