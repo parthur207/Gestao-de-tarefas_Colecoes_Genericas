@@ -1,4 +1,4 @@
-<center # Documentação do Projeto: Gestão de Tarefas />
+<h1 align="center">  # Documentação do Projeto: Gestão de Tarefas </h1>
 <br>
 
 
