@@ -52,6 +52,10 @@ Propriedades na inserção de uma nova tarefa: Titulo da tarefa, descrição da 
 - ITaskRepository:
 Define a estrutura básica para as operações de adicionar, remover, atualizar, listar e verificar tarefas.
 
+### Task.cs:
+- Classe Task:
+  Possui a declaração de todos os atributos utilizados pelo sistema, ja ditando suas respectivas regras/restrições. 
+
 #### TaskService.cs:
 - Classe TaskService:
 Implementa a interface ITaskRepository e define a estrutura das tarefas, além de conter os métodos para gerenciar as tarefas.
