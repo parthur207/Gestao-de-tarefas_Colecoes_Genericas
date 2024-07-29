@@ -1,3 +1,5 @@
+<h1 align="center"> Etapa 1 - Questões teóricas </h1>
+
 Parte 1: Questões Teóricas
 
 1. Explique o que são os princípios SOLID e como cada um deles pode ser aplicado em um projeto desenvolvido em .NET.
