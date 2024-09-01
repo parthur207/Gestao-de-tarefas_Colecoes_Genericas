@@ -1,4 +1,4 @@
-<h1 align="center"> Gerenciador de Tarefas </h1>
+<h1 align="center"> Gerenciador de Tarefas - Coleções genéricas</h1>
 
 ## Descrição
 
