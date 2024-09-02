@@ -40,6 +40,7 @@ Propriedades na inserção de uma nova tarefa: Titulo da tarefa, descrição da 
 
 ## Como Executar:
 1. Clone o repositório:
+   
    ```bash
    
    git clone (https://github.com/parthur207/Gestao-de-tarefas.git)
