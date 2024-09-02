@@ -46,6 +46,7 @@ Propriedades na inserção de uma nova tarefa: Titulo da tarefa, descrição da 
    git clone (https://github.com/parthur207/Gestao-de-tarefas.git)
    
 <br>
+
 ## Estrutura do Projeto
 
 #### Interface.cs: 
