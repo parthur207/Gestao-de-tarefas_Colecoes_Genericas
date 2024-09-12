@@ -1,4 +1,4 @@
-<h1 align="center"> Documentação do Projeto: Gestão de Tarefas </h1>
+<h1 align="center"> Documentação do Projeto: Gestão de Tarefas - Coleções genéricas </h1>
 
 <br>
 
